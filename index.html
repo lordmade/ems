@@ -50,9 +50,14 @@
     .float-animation {
       animation: float 6s ease-in-out infinite;
     }
-    /* Mobile menu toggle */
     .menu-toggle:checked ~ .menu-content {
       display: block;
+    }
+    .feature-icon svg {
+      width: 48px;
+      height: 48px;
+      fill: #fff;
+      margin-bottom: 1rem;
     }
   </style>
 </head>
@@ -96,32 +101,68 @@
     <div class="max-w-7xl mx-auto">
       <h2 class="text-3xl sm:text-5xl font-bold text-center mb-8 sm:mb-16 uppercase">Key Features</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12">
+        <!-- Feature 1: Real-Time Mapping -->
         <div class="feature-card bg-gray-800/50 backdrop-blur-md p-6 sm:p-8 rounded-xl shadow-2xl hover:scale-105 transition transform">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+            </svg>
+          </div>
           <div class="feature-img h-32 sm:h-48 mb-6 rounded-lg"></div>
           <h3 class="text-xl sm:text-2xl font-bold mb-4">Interactive Map</h3>
           <p class="text-gray-300 text-sm sm:text-base">Powered by Mapbox, view your location, set destinations, and see real-time routes with 3D tilt and navigation controls.</p>
         </div>
+        <!-- Feature 2: SOS Alerts -->
         <div class="feature-card bg-gray-800/50 backdrop-blur-md p-6 sm:p-8 rounded-xl shadow-2xl hover:scale-105 transition transform">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 1.5l-8.5 9h17l-8.5-9zm0 4.5v6m0 4h0"/>
+            </svg>
+          </div>
           <div class="feature-img h-32 sm:h-48 mb-6 rounded-lg" style="background-image: url('https://via.placeholder.com/800x600?text=SOS+Alert+Graphic');"></div>
           <h3 class="text-xl sm:text-2xl font-bold mb-4">One-Tap SOS</h3>
           <p class="text-gray-300 text-sm sm:text-base">Send emergency alerts for police, ambulance, fire, or hazards with encrypted location data for privacy and security.</p>
         </div>
+        <!-- Feature 3: Weather Integration -->
         <div class="feature-card bg-gray-800/50 backdrop-blur-md p-6 sm:p-8 rounded-xl shadow-2xl hover:scale-105 transition transform">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 3v2m-9 7H1m5.64-5.64l-1.42-1.42m12.78 0l1.42 1.42M3 12h2m16 0h2m-5.64 5.64l1.42 1.42m-12.78 0l-1.42-1.42M12 19v2m4-10c0 2.21-1.79 4-4 4s-4-1.79-4-4 1.79-4 4-4 4 1.79 4 4z"/>
+            </svg>
+          </div>
           <div class="feature-img h-32 sm:h-48 mb-6 rounded-lg" style="background-image: url('https://via.placeholder.com/800x600?text=Weather+Insights+Graphic');"></div>
           <h3 class="text-xl sm:text-2xl font-bold mb-4">Live Weather</h3>
           <p class="text-gray-300 text-sm sm:text-base">Get instant weather updates, forecasts, and markers on the map to stay prepared during emergencies.</p>
         </div>
-        <div class="feature-card bg-gray-800/50 backdrop-blur-md p-6 sm:p- Internacional rounded-xl shadow-2xl hover:scale-105 transition transform">
+        <!-- Feature 4: Emergency Chat -->
+        <div class="feature-card bg-gray-800/50 backdrop-blur-md p-6 sm:p-8 rounded-xl shadow-2xl hover:scale-105 transition transform">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 2H4c-1.1 0-2 .9-2 2v16l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 10H6v-2h12v2zm0-3H6V7h12v2z"/>
+            </svg>
+          </div>
           <div class="feature-img h-32 sm:h-48 mb-6 rounded-lg" style="background-image: url('https://via.placeholder.com/800x600?text=Chat+Interface+Graphic');"></div>
           <h3 class="text-xl sm:text-2xl font-bold mb-4">Real-Time Chat</h3>
           <p class="text-gray-300 text-sm sm:text-base">Communicate with responders via secure chat, with unread badges and vibration alerts for new messages.</p>
         </div>
+        <!-- Feature 5: Communities -->
         <div class="feature-card bg-gray-800/50 backdrop-blur-md p-6 sm:p-8 rounded-xl shadow-2xl hover:scale-105 transition transform">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 11c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 3-1.34 3-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05.02.33.05.67.05 1 0 2.33-4.67 3.5-7 3.5S1 18.33 1 16c0-.33.03-.67.05-1A14.94 14.94 0 0 0 0 13.5V19h24v-5.5c0-2.33-4.67-3.5-7-3.5z"/>
+            </svg>
+          </div>
           <div class="feature-img h-32 sm:h-48 mb-6 rounded-lg" style="background-image: url('https://via.placeholder.com/800x600?text=Communities+Graphic');"></div>
           <h3 class="text-xl sm:text-2xl font-bold mb-4">Community Support</h3>
           <p class="text-gray-300 text-sm sm:text-base">Join groups for shared alerts, discussions, and collaborative emergency response.</p>
         </div>
+        <!-- Feature 6: Dark Mode & Customization -->
         <div class="feature-card bg-gray-800/50 backdrop-blur-md p-6 sm:p-8 rounded-xl shadow-2xl hover:scale-105 transition transform">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.22.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.91-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 3.08-1.95 5.74-4.9 6.89z"/>
+            </svg>
+          </div>
           <div class="feature-img h-32 sm:h-48 mb-6 rounded-lg" style="background-image: url('https://via.placeholder.com/800x600?text=Dark+Mode+Graphic');"></div>
           <h3 class="text-xl sm:text-2xl font-bold mb-4">Customizable UI</h3>
           <p class="text-gray-300 text-sm sm:text-base">Toggle between light and dark themes, with glassmorphism navigation and smooth animations.</p>
